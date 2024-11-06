@@ -2,13 +2,13 @@
     font-family: Open-sans;
     font-weight: normal;
     src: url('../fonts/OpenSans-Regular.woff');
-}
+  }
   
   @font-face {
     font-family: Open-sans;
     font-weight: bold;
     src: url('../fonts/OpenSans-Bold.woff');
-}
+  }
   
   body {
     width: 1660px;
