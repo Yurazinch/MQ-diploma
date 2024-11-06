@@ -1,16 +1,18 @@
 @font-face {
     font-family: Open-sans;
     font-weight: normal;
-    src: url('../fonts/OpenSans-Regular.woff'),
-        url('../fonts/OpenSans-Regular.ttf'),
+    font-style: regular;
+    src: url('../fonts/OpenSans-Regular.woff');
+    src: url('../fonts/OpenSans-Regular.ttf'),
         url('../fonts/OpenSans-Regular.woff2');
   }
   
   @font-face {
     font-family: Open-sans;
     font-weight: bold;
-    src: url('../fonts/OpenSans-Bold.woff'),
-        url('../fonts/OpenSans-Bold.ttf'),
+    font-style: normal;
+    src: url('../fonts/OpenSans-Bold.woff');
+    src: url('../fonts/OpenSans-Bold.ttf'),
         url('../fonts/OpenSans-Bold.woff2');
   }
   
