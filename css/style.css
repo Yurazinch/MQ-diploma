@@ -1,7 +1,6 @@
 @font-face {
     font-family: Open-sans;
     font-weight: normal;
-    font-style: normal;
     src: url('../fonts/OpenSans-Regular.woff'),
         url('../fonts/OpenSans-Regular.ttf'),
         url('../fonts/OpenSans-Regular.woff2');
@@ -10,7 +9,6 @@
   @font-face {
     font-family: Open-sans;
     font-weight: bold;
-    font-style: normal;  
     src: url('../fonts/OpenSans-Bold.woff'),
         url('../fonts/OpenSans-Bold.ttf'),
         url('../fonts/OpenSans-Bold.woff2');
