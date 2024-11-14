@@ -8,11 +8,11 @@
 </head>
 <body>
     <header class="header">
+        <div class="header__logo">
+          <img src="svg/noemi-logo.svg" alt="Логотип">
+        </div>
         <section class="header__section">
-          <div class="header__logo">
-            <img src="svg/noemi-logo.svg" alt="Логотип">
-          </div>
-          <nav class="header__nav">
+            <nav class="header__nav">
             <ul class="header__menu">
               <li class="header__menu-link"><a class="menu-link" href="#">Главная</a></li>
               <li class="header__menu-link"><a class="menu-link" href="#">Посты</a></li>
@@ -22,6 +22,7 @@
               <li class="header__menu-link"><a class="menu-link" href="#">Контакты</a></li>
             </ul>
           </nav>
+          <button class="burger"></button>
         </section>
         <div class="blog__title">
           <h1 class="blog__title-content">Блог о творчестве, спорте и образе жизни</h1>
@@ -89,7 +90,7 @@
         <main class="blog__container">
           <section class="blog__section">
             <figure class="blog__section-image">
-              <img src="img/last-post1.jpg" alt="Берег моря на рассвете">
+              <img src="img/last-post1.jpg" class="blog-image" alt="Берег моря на рассвете">
             </figure>
             <article class="blog__article">
               <ul class="article__header">
@@ -108,7 +109,7 @@
           </section>
           <section class="blog__section">
             <figure class="blog__section-image">
-              <img src="img/last-post2.jpg" alt="Ассана йоги">
+              <img src="img/last-post2.jpg" class="blog-image" alt="Ассана йоги">
             </figure>
             <article class="blog__article">
               <div class="article__header">
@@ -127,7 +128,7 @@
           </section>
           <section class="blog__section">
             <figure class="blog__section-image">
-              <img src="img/last-post3.jpg" alt="Музыкальные фестивали">
+              <img src="img/last-post3.jpg" class="blog-image" alt="Музыкальные фестивали">
             </figure>
             <article class="blog__article">
               <div class="article__header">
@@ -146,7 +147,7 @@
           </section>
           <section class="blog__section">
             <figure class="blog__section-image">
-              <img src="img/last-post4.jpg" alt="Подход к кулинарии">
+              <img src="img/last-post4.jpg" class="blog-image" alt="Подход к кулинарии">
             </figure>
             <article class="blog__article">
               <div class="article__header">
@@ -165,7 +166,7 @@
           </section>
           <section class="blog__section">
             <figure class="blog__section-image">
-              <img src="img/last-post5.jpg" alt="Принты на подушках">
+              <img src="img/last-post5.jpg" class="blog-image" alt="Принты на подушках">
             </figure>
             <article class="blog__article">
               <div class="article__header">
@@ -183,7 +184,6 @@
               </div>
             </article>
           </section>
-          
         </main>
       
         <aside class="blog__sidebar">
@@ -379,6 +379,7 @@
       
   <section class="banner">
     <div class="banner__form">
+      <div class="banner__close"></div>
       <div class="shop__title">
         <h3 class="in__trends__title">Ваш фидбек</h3>
       </div>
