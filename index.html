@@ -8,11 +8,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-          <img src="svg/noemi-logo.svg" alt="Логотип">
-        </div>
         <section class="header__section">
-            <nav class="header__nav">
+          <div class="header__logo">
+            <img src="svg/noemi-logo.svg" alt="Логотип">
+          </div>
+          <nav class="header__nav">
             <ul class="header__menu">
               <li class="header__menu-link"><a class="menu-link" href="#">Главная</a></li>
               <li class="header__menu-link"><a class="menu-link" href="#">Посты</a></li>
@@ -22,7 +22,7 @@
               <li class="header__menu-link"><a class="menu-link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <button class="burger"></button>
+          <button class="burger"><span class="visualy-hidden">burger</span></button>
         </section>
         <div class="blog__title">
           <h1 class="blog__title-content">Блог о творчестве, спорте и образе жизни</h1>
@@ -37,12 +37,12 @@
             <div class="in__trend-group">
               <div class="in__trends-category">
                 <ul class="in__trends-list">
-                  <li class="in__trends-row">Lifestyle</li>
-                  <li class="in__trends-row">Interior</li>
+                  <li class="in__trends-row"><a href="#" class="article__header-link">Lifestyle</a></li>
+                  <li class="in__trends-row"><a href="#" class="article__header-link">Interior</a></li>
                 </ul>
               </div>
               <div class="in__trends_cardtitle">
-                <h2 class="cardtitle">Сейчас в тренде: сад на подоконнике</h2>
+                <h2 class="cardtitle"><a class="cardtitle-link">Сейчас в тренде: сад на подоконнике</a></h2>
               </div>
             </div>
           </div>
@@ -50,11 +50,11 @@
             <div class="in__trend-group">
               <div class="in__trends-category">
                 <ul class="in__trends-list">
-                  <li class="in__trends-row">Food</li>
+                  <li class="in__trends-row"><a href="#" class="article__header-link">Food</a></li>
                 </ul>
               </div>
               <div class="in__trends_cardtitle">
-                <h2 class="cardtitle">Сыры на красивых картинках из интернета: какие они на вкус?</h2>
+                <h2 class="cardtitle"><a class="cardtitle-link">Сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
               </div>
             </div>
           </div>
@@ -62,12 +62,12 @@
             <div class="in__trend-group">
               <div class="in__trends-category">
                 <ul class="in__trends-list">
-                  <li class="in__trends-row">Lifestyle</li>
-                  <li class="in__trends-row">Travel</li>
+                  <li class="in__trends-row"><a href="#" class="article__header-link">Lifestyle</a></li>
+                  <li class="in__trends-row"><a href="#" class="article__header-link">Travel</a></li>
                 </ul>
               </div>
               <div class="in__trends_cardtitle">
-                <h2 class="cardtitle">Собираемся в первый поход в горы</h2>
+                <h2 class="cardtitle"><a class="cardtitle-link">Собираемся в первый поход в горы</a></h2>
               </div>
             </div>
           </div>
@@ -75,12 +75,12 @@
             <div class="in__trend-group">
               <div class="in__trends-category">
                 <ul class="in__trends-list">
-                  <li class="in__trends-row">Food</li>
-                  <li class="in__trends-row">Healt</li>
+                  <li class="in__trends-row"><a href="#" class="article__header-link">Food</a></li>
+                  <li class="in__trends-row"><a href="#" class="article__header-link">Healt</a></li>
                 </ul>
               </div>
               <div class="in__trends_cardtitle">
-                <h2 class="cardtitle">Сейчас в тренде: сколько витамина с в лимонах?</h2>
+                <h2 class="cardtitle"><a class="cardtitle-link">Сейчас в тренде: сколько витамина с в лимонах?</a></h2>
               </div>
             </div>
           </div>
@@ -235,28 +235,34 @@
               </div>
             </article>
             <form action="search" class="aside__form-search">
-              <input class="input-search input" type="search" placeholder="Найти...">
-              <input class="input-search search-button button" type="button" placeholder="none">
+              <label>
+                <input class="input-search input" type="search" placeholder="Найти..."><span class="visualy-hidden">search</span>
+              </label>
+              <button class="input-search search-button button"><span class="visualy-hidden">search button</span></button>
             </form>
           </section>
           <section class="blog__item">
             <h3 class="aside__title">Рассылка</h3>
             <form action="#" class="aside__form">
-              <input class="input-email input" type="email" placeholder="Ваш email адрес">
-              <input class="input-submit button" type="button" value="Отправить">
+              <label>
+                <input class="input-email input" type="email" placeholder="Ваш email адрес"><span class="visualy-hidden">email</span>
+              </label>
+              <label>
+                <button class="input-submit button">Отправить</button><span class="visualy-hidden">email button</span>
+              </label>
             </form>
           </section>
           <section class="blog__item">
             <h3 class="aside__title">Теги</h3>
             <ul class="tegs-table">
-              <li class="aside__tegs"><a class="aside__tegs-table" href="#"><span>fasion</span></a></li>
-              <li class="aside__tegs"><a class="aside__tegs-table" href="#"><span>music</span></a></li>
-              <li class="aside__tegs"><a class="aside__tegs-table" href="#"><span>lifestyle</span></a></li>
-              <li class="aside__tegs"><a class="aside__tegs-table" href="#"><span>art</span></a></li>
-              <li class="aside__tegs"><a class="aside__tegs-table" href="#"><span>interior</span></a></li>
-              <li class="aside__tegs"><a class="aside__tegs-table" href="#"><span>travel</span></a></li>
-              <li class="aside__tegs"><a class="aside__tegs-table" href="#"><span>food</span></a></li>
-              <li class="aside__tegs"><a class="aside__tegs-table" href="#"><span>health</span></a>
+              <li class="aside__tegs"><a class="aside__tegs-table" href="#">fasion</a></li>
+              <li class="aside__tegs"><a class="aside__tegs-table" href="#">music</a></li>
+              <li class="aside__tegs"><a class="aside__tegs-table" href="#">lifestyle</a></li>
+              <li class="aside__tegs"><a class="aside__tegs-table" href="#">art</a></li>
+              <li class="aside__tegs"><a class="aside__tegs-table" href="#">interior</a></li>
+              <li class="aside__tegs"><a class="aside__tegs-table" href="#">travel</a></li>
+              <li class="aside__tegs"><a class="aside__tegs-table" href="#">food</a></li>
+              <li class="aside__tegs"><a class="aside__tegs-table" href="#">health</a>
               </li>
             </ul>
           </section>
@@ -279,9 +285,11 @@
           </div>
           <section class="product__cards">
             <div class="product__card">
-              <div class="product__img card__img1">
-                <span class="visualy-hidden">Подушки на диван</span>
-              </div>
+              <picture class="product__img">
+                <source media="(max-width: 360px)" srcset="img/shop-item-mobile1.jpg">
+                <source media="(max-width: 767px)" srcset="img/shop-item-tablet1.jpg">
+                <img src="img/shop-item-desk1.jpg" alt="Подушка на диван">
+              </picture>
               <article class="product__source">
                 <div class="card__title">
                   <h2 class="product__title">Подушки на диван</h2>
@@ -303,9 +311,11 @@
               </article>
             </div>
             <div class="product__card">
-              <div class="product__img card__img2">
-                <span class="visualy-hidden">Кукла "Зайчик"</span>
-              </div>
+              <picture class="product__img">
+                <source media="(max-width: 360px)" srcset="img/shop-item-mobile2.jpg">
+                <source media="(min-width: 767px)" srcset="img/shop-item-tablet2.jpg">
+                <img src="img/shop-item-desk2.jpg" alt="Игрушка Зайчик">
+              </picture>
               <article class="product__source">
                 <div class="card__title">
                   <h2 class="product__title">Кукла "Зайчик"</h2>
@@ -327,9 +337,11 @@
               </article>
             </div>
             <div class="product__card">
-              <div class="product__img card__img3">
-                <span class="visualy-hidden">Шестиугольная рамка</span>
-              </div>
+              <picture>
+                <source media="(max-width: 360px)" srcset="img/shop-item-mobile3.jpg">
+                <source media="(min-width: 767px)" srcset="img/shop-item-tablet3.jpg">
+                <img src="img/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+              </picture>
               <article class="product__source">
                 <div class="card__title">
                   <h2 class="product__title">Шестиугольная рамка</h2>
@@ -379,11 +391,11 @@
       
   <section class="banner">
     <div class="banner__form">
-      <div class="banner__close"></div>
+      <div class="banner__close"><span class="visualy-hidden">Закрыть</span></div>
       <div class="shop__title">
-        <h3 class="in__trends__title">Ваш фидбек</h3>
+        <h3 class="shop__title-text">Ваш фидбек</h3>
       </div>
-      <form></form>
+      <form>
         <span class="banner__title">Как часто вы заходите на сайт?</span>
         <select name="quantity" class="banner__quantity">
           <option class="quantity__option">Почти каждый день</option>
