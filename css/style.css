@@ -139,7 +139,7 @@
   .blog__title-content {
     display: block;
     margin: 0;
-    width: 700px;
+    max-width: 700px;
     z-index: 3;
     color: #fff;
     text-align: center;
@@ -970,12 +970,13 @@
     body {
       /*max-width: 768px;*/
       width: 100%;
-      margin: 0 auto;
+      margin: 0;
+      padding: 0;
     }
 
     .header {
       padding-top: 29px;
-      height: 390px;
+      /*height: 390px*/;
       background-image: url('../img/banner-bg-tablet.jpg');
     }
 
@@ -1043,6 +1044,7 @@
 
     .blog-image {
       max-width: 390px;
+      width: 100%;
     }
 
     .input-search {
