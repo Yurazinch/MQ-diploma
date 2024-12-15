@@ -72,8 +72,8 @@
     display: flex;
     gap: 35px;
     width: 462px;
-    margin: 30px 0 0 0;
-    padding-right: 30px;
+    margin: 30px 30px 0 0;
+    /*padding-right: 30px;*/
   }
   
   .header__menu-link {
@@ -1022,12 +1022,13 @@
 
     .in__trend-main {
       flex-wrap: wrap;
+      justify-content: space-around;
       height: auto;
     }
 
     .in__trends-card {
       width: calc(100% / 2 - 1.5vw);
-      padding: 1.5vw;
+      padding: 1vw;
     }
 
     .body__container {
@@ -1096,7 +1097,8 @@
   @media(max-width: 560px) {
     .product__cards {
       display: block;
-      width: 90%;
+      box-sizing: border-box;
+      width: 100%;
       padding: 0 2vw;
       margin: 0 auto;
     }
