@@ -1028,7 +1028,7 @@
     }
 
     .in__trends-card {
-      width: calc(100% / 2 - 1.5vw);
+      width: calc(100% / 2 - 0.9vw);
       padding: 1vw;
     }
 
