@@ -1341,7 +1341,7 @@
       box-sizing: border-box;     
       width: calc(96vw - 40px);
       max-width: 260px;
-      /*min-width: 260px;*/
+      min-width: 100%;
     }
 
     .banner__submit {
